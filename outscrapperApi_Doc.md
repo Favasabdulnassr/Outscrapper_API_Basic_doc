@@ -41,18 +41,30 @@ X-API-KEY: YOUR_API_KEY
 
 ## 3. Key Outscraper API Endpoints Overview
 
-Below are some  Outscraper API endpoints and their purposes:
+Below are some Outscraper API endpoints, their purposes, data returned, and key parameters.
 
-| Endpoint URL | Purpose |
-|--------------|---------|
-| `https://api.outscraper.cloud/contacts-and-leads` | Allows finding email addresses, social links, and phone numbers from domains |
-| `https://api.outscraper.cloud/google-maps-search` | Allows searching businesses and points of interest (POI) |
-| `https://api.outscraper.cloud/google-maps-reviews` | Allows fetching reviews for businesses on Google Maps |
-| `https://api.outscraper.cloud/contacts-finder` | Allows finding company contacts from domains |
-| `https://api.outscraper.cloud/company-website-finder` | Finds company websites based on business names |
-| `https://api.outscraper.cloud/amazon-products` |Returns information about products on Amazon
+| Endpoint URL | Purpose | Example Data Returned | Key Parameters | Required Parameters |
+|--------------|----------|------------------------|----------------|---------------------|
+| `https://api.outscraper.cloud/contacts-and-leads` | `Contacts & Leads - Finds emails, social links, phones, and other contacts from websites` | `query`, `details`, `emails`, `phones`, `site_data`, `socials`, `domain`, `contacts` | `query`, `preferredContacts`, `contactsPerCompany`, `emailsPerContact`, `generalEmails`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
 
-|
+| `https://api.outscraper.cloud/emails-and-contacts` | `Emails & Contacts - Finds email addresses, social links, and phones from domains` | `query`, `domain`, `emails`, `socials`, `site_data` | `query`, `preferredContacts`, `webhook` | `query` |
+
+
+| `https://api.outscraper.cloud/google-maps-search` | Search businesses and points of interest (POI) on Google Maps in real-time. Supports batching, location-specific queries, and data enrichment. |  `name`, `full_address`, `phone`, `site`, `category`, `subtypes`, `rating`, `reviews`  | `query`, `limit`, `dropDuplicates`, `totalLimit`, `coordinates`, `skipPlaces`, `language`, `region`, `enrichment`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+
+| `https://api.outscraper.cloud/google-places-by-domain` | `Google Maps (Places) by Domain - Allows finding places by domains` | `query`, `name`, `full_address`, `phone`, `site`, `category`, `subtypes`, `rating`, `reviews`, `place_id`, `google_id`, `latitude`, `longitude` | `query`, `perQuery`, `region`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+
+
+| `https://api.outscraper.cloud/yelp-search` | `Yelp Search - Returns search results from Yelp` | `query`, `biz_id`, `name`, `price_range`, `rating`, `reviews`, `categories`, `formatted_address`, `neighborhoods`, `phone`, `business_url`, `services`, `photo`, `tags`, `snippet` | `query`, `limit`, `enrichment`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+
+
+| `https://api.outscraper.cloud/yelp-biz` | `Yelp Business - Returns detailed business information from Yelp` | `query`, `biz_id`, `name`, `business_url`, `closed`, `reviews`, `rating`, `image`, `phone`, `price_range`, `country`, `state`, `city`, `postal_code` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+
+
+| `https://api.outscraper.cloud/yellowpages-search` | `Yellow Pages Search - Returns search results from Yellow Pages` | `query`, `name`, `categories`, `position`, `years_in_business`, `years_with_yp`, `amenities`, `phone`, `street`, `locality`, `site`, `snippet`, `thumbnail`, `range`, `business_link` | `query`, `location`, `limit`, `region`, `enrichment`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+
+| `https://api.outscraper.cloud/company-website-finder` | `Finds company websites based on business names` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+
 
 
 ---
