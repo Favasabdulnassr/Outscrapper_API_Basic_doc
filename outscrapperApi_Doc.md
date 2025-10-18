@@ -96,6 +96,9 @@ print(data)
 
 ### 5.2 Using the official Outscraper Python SDK
 
+```python
+
+
 from outscraper import ApiClient
 
 api_client = ApiClient(api_key='YOUR-API-KEY')
@@ -105,8 +108,11 @@ results = api_client.contacts_and_leads(['outscraper.com', 'examplelawfirm.com']
 print(results)
 
 
+```
 
 ## 6. Sample Response
+
+```python
 
 
 [
@@ -125,7 +131,7 @@ print(results)
 ]
 
 
-
+```
 
 ## 7. Conclusion / Notes
 
