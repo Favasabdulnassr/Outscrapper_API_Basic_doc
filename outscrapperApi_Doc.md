@@ -6,13 +6,19 @@ Outscraper is a data extraction API that allows us to collect publicly available
 
 - Emails, phone numbers, social links (**Contacts & Leads**)  
 - Business details from Google Maps (**Businesses & POI**)  
-- Optional: reviews and comments  
+- Optional: reviews and comments 
+- Company website information (**Company Website Finder**)  
+- Product details from e-commerce sites (**Amazon Products API**)  
+- Domain information and WHOIS details (**Domain Info**)  
 
 
 ---
 
 ## 2. Authentication
+
 All API requests require an **API key**.
+
+```
 
 **Preferred (secure) method:**
 
@@ -23,7 +29,7 @@ X-API-KEY: YOUR_API_KEY
 ?apiKey=YOUR_API_KEY
 
 
-
+```
 
 
 **Notes:**
