@@ -52,7 +52,7 @@ Below are some Outscraper API endpoints, their purposes, data returned, and key 
 | `https://api.outscraper.cloud/yelp-search` | `Yelp Search - Returns search results from Yelp` | `query`, `biz_id`, `name`, `price_range`, `rating`, `reviews`, `categories`, `formatted_address`, `neighborhoods`, `phone`, `business_url`, `services`, `photo`, `tags`, `snippet` | `query`, `limit`, `enrichment`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
 | `https://api.outscraper.cloud/yelp-biz` | `Yelp Business - Returns detailed business information from Yelp` | `query`, `biz_id`, `name`, `business_url`, `closed`, `reviews`, `rating`, `image`, `phone`, `price_range`, `country`, `state`, `city`, `postal_code` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
 | `https://api.outscraper.cloud/yellowpages-search` | `Yellow Pages Search - Returns search results from Yellow Pages` | `query`, `name`, `categories`, `position`, `years_in_business`, `years_with_yp`, `amenities`, `phone`, `street`, `locality`, `site`, `snippet`, `thumbnail`, `range`, `business_link` | `query`, `location`, `limit`, `region`, `enrichment`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
-| `https://api.outscraper.cloud/company-website-finder` | `Finds company websites based on business names` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
+| `https://api.outscraper.cloud/company-website-finder` | `Finds company websites based on business names` | `query`, `company_name`, `website`, `domain`, `confidence_score`, `webhook` | `query`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
 
 
 
