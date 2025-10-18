@@ -51,7 +51,7 @@ Below are some  Outscraper API endpoints and their purposes:
 
 ---
 
-## 3. Key Parameters (Contacts & Leads API)
+## 4. Key Parameters (Contacts & Leads API)
 
 - `query`: List of domains or URLs to scan  
 - `preferredContacts`: Target roles. Supports multiple categories: "decision makers",         "influencers", "procurement/purchasing", "technical", "finance", "operations", "marketing",  "sales", "maintenance", "human resources", "legal and compliance", "supply chain/logistics", "education/training"
