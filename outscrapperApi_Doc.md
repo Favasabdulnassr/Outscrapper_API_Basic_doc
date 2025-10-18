@@ -58,23 +58,9 @@ Below are some Outscraper API endpoints, their purposes, data returned, and key 
 
 ---
 
-## 4. Key Parameters (Contacts & Leads API)
+## 4. Python Examples
 
-- `query`: List of domains or URLs to scan  
-- `preferredContacts`: Target roles. Supports multiple categories: "decision makers",         "influencers", "procurement/purchasing", "technical", "finance", "operations", "marketing",  "sales", "maintenance", "human resources", "legal and compliance", "supply chain/logistics", "education/training"
-- `contactsPerCompany`: Number of contacts per company (default: 3)  
-- `emailsPerContact`: Emails per contact (default: 1)  
-- `generalEmails`: `true` = only info@/support@ type, `false` = personal emails  
-- `async`: `true` = background processing (default), `false` = wait for result immediately  
-- `fields`: Optional, select which fields to return (name, email, phone, etc.)  
-- `format`: Output format: json, csv, xlsx, parquet  
-- `webhook`: Optional callback URL for async jobs  
-
----
-
-## 5. Python Examples
-
-### 5.1 Direct API request (using `requests`)
+### 4.1 Direct API request (using `requests`)
 ```python
 import requests
 import os
@@ -101,7 +87,7 @@ print(data)
 ```
 
 
-### 5.2 Using the official Outscraper Python SDK
+### 4.2 Using the official Outscraper Python SDK
 
 ```python
 
@@ -117,7 +103,7 @@ print(results)
 
 ```
 
-## 6. Sample Response
+## 5. Sample Response
 
 ```python
 
@@ -140,7 +126,7 @@ print(results)
 
 ```
 
-## 7. Conclusion / Notes
+## 6. Conclusion / Notes
 
 - Outscraper APIs provide an easy way to extract contacts, emails, and business information from websites and Google Maps.  
 - API key authentication is required for all requests, passed via `X-API-KEY` header.    
