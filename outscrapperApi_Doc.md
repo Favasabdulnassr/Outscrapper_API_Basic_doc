@@ -39,11 +39,11 @@ X-API-KEY: YOUR_API_KEY
 
 ---
 
-## 3. Key Outscraper API Endpoints Overview
+## 3. Key Outscraper API Endpoints 
 
 Below are some Outscraper API endpoints, their purposes, data returned, and key parameters.
 
-| Endpoint URL | Purpose | Example Data Returned | Key Parameters | Required Parameters |
+| Endpoint URL | Purpose | Returned Data type | Key Parameters | Required Parameters |
 |--------------|----------|------------------------|----------------|---------------------|
 | `https://api.outscraper.cloud/contacts-and-leads` | `Contacts & Leads - Finds emails, social links, phones, and other contacts from websites` | `query`, `details`, `emails`, `phones`, `site_data`, `socials`, `domain`, `contacts` | `query`, `preferredContacts`, `contactsPerCompany`, `emailsPerContact`, `generalEmails`, `fields`, `async`, `ui`, `format`, `webhook` | `query` |
 | `https://api.outscraper.cloud/emails-and-contacts` | `Emails & Contacts - Finds email addresses, social links, and phones from domains` | `query`, `domain`, `emails`, `socials`, `site_data` | `query`, `preferredContacts`, `webhook` | `query` |
